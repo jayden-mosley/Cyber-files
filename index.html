@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Blog Post</title>
+    <title>My Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My First Blog Post</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to My Blog</h1>
+        <img src="your-icon.png" alt="My Icon" class="profile-icon">
     </header>
 
-    <main>
-        <h2>Post Title Here</h2>
-        <p>This is where your blog content goes...</p>
-        <a href="index.html">← Back to Home</a>
-    </main>
+    <section class="carousel-container">
+        <button id="prevBtn">❮</button>
+        <div class="carousel">
+            <div class="post">
+                <h2>Post 1</h2>
+                <p>Preview of blog post 1...</p>
+                <a href="post1.html">Read More</a>
+            </div>
+            <div class="post">
+                <h2>Post 2</h2>
+                <p>Preview of blog post 2...</p>
+                <a href="post2.html">Read More</a>
+            </div>
+            <div class="post">
+                <h2>Post 3</h2>
+                <p>Preview of blog post 3...</p>
+                <a href="post3.html">Read More</a>
+            </div>
+        </div>
+        <button id="nextBtn">❯</button>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 My Blog. All rights reserved.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
+
