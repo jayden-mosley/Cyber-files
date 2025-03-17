@@ -3,38 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tech Draws</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Blog</h1>
-        <img src="your-icon.png" alt="My Icon" class="profile-icon">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">My Blog</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#personal-blogs">Tech Articles</a></li>
+            <li><a href="#tech-articles">Projects</a></li>
+            <li><a href="#projects">Personal T'ings</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="intro">
+        <h1>Welcome to Tech Draws</h1>
+        <p>Exploring tech, art, and personal experiences.</p>
     </header>
 
-    <section class="carousel-container">
-        <button id="prevBtn">❮</button>
-        <div class="carousel">
-            <div class="post">
-                <h2>Post 1</h2>
-                <p>Preview of blog post 1...</p>
-                <a href="post1.html">Read More</a>
-            </div>
-            <div class="post">
-                <h2>Post 2</h2>
-                <p>Preview of blog post 2...</p>
-                <a href="post2.html">Read More</a>
-            </div>
-            <div class="post">
-                <h2>Post 3</h2>
-                <p>Preview of blog post 3...</p>
-                <a href="post3.html">Read More</a>
-            </div>
+    <!-- Blog Categories -->
+    <section id="personal-blogs" class="blog-category">
+        <h2>Tech Articles</h2>
+        <div class="blog-entry">
+            <h3>The One About My Trip</h3>
+            <p>A story about my recent adventure in Japan.</p>
+            <a href="blog1.html">Read More →</a>
         </div>
-        <button id="nextBtn">❯</button>
     </section>
 
-    <script src="script.js"></script>
+    <section id="tech-articles" class="blog-category">
+        <h2>Projects</h2>
+        <div class="blog-entry">
+            <h3>Introduction to Cybersecurity</h3>
+            <p>A beginner's guide to staying safe online.</p>
+            <a href="blog2.html">Read More →</a>
+        </div>
+    </section>
+
+    <section id="projects" class="blog-category">
+        <h2>Personal T'ings</h2>
+        <div class="blog-entry">
+            <h3>PLC Ladder Logic Simulation</h3>
+            <p>My project on simulating PLC ladder logic using Python.</p>
+            <a href="project.html">View Project →</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tech Draws. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
-
