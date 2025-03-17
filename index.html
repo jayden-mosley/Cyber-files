@@ -3,62 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Draws</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">My Blog</a>
-        </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#personal-blogs">Tech Articles</a></li>
-            <li><a href="#tech-articles">Projects</a></li>
-            <li><a href="#projects">Personal T'ings</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Header Section -->
-    <header class="intro">
-        <h1>Welcome to Tech Draws</h1>
-        <p>Exploring tech, art, and personal experiences.</p>
-    </header>
-
-    <!-- Blog Categories -->
-    <section id="personal-blogs" class="blog-category">
-        <h2>Tech Articles</h2>
-        <div class="blog-entry">
-            <h3>The One About My Trip</h3>
-            <p>A story about my recent adventure in Japan.</p>
-            <a href="blog1.html">Read More →</a>
+    <div class="container">
+        <div class="profile">
+            <img src="profile-placeholder.png" alt="Your Icon">
+            <h1>Welcome to My Blog!</h1>
+            <p>Sharing my experiences, projects, and tech thoughts.</p>
         </div>
-    </section>
-
-    <section id="tech-articles" class="blog-category">
-        <h2>Projects</h2>
-        <div class="blog-entry">
-            <h3>Introduction to Cybersecurity</h3>
-            <p>A beginner's guide to staying safe online.</p>
-            <a href="blog2.html">Read More →</a>
+        <div class="blog-section">
+            <h2>Recent Posts</h2>
+            <div class="blog-grid">
+                <div class="blog-post">
+                    <img src="placeholder1.jpg" alt="Blog Image">
+                    <p>Blog Title 1</p>
+                </div>
+                <div class="blog-post">
+                    <img src="placeholder2.jpg" alt="Blog Image">
+                    <p>Blog Title 2</p>
+                </div>
+                <div class="blog-post">
+                    <img src="placeholder3.jpg" alt="Blog Image">
+                    <p>Blog Title 3</p>
+                </div>
+            </div>
+            
+            <button class="arrow left" onclick="prevPost()">&#10094;</button>
+            <button class="arrow right" onclick="nextPost()">&#10095;</button>
         </div>
-    </section>
-
-    <section id="projects" class="blog-category">
-        <h2>Personal T'ings</h2>
-        <div class="blog-entry">
-            <h3>PLC Ladder Logic Simulation</h3>
-            <p>My project on simulating PLC ladder logic using Python.</p>
-            <a href="project.html">View Project →</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Tech Draws. All rights reserved.</p>
-    </footer>
+    </div>
 
 </body>
 </html>
