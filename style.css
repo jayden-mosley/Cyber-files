@@ -1,3 +1,4 @@
+/* Reset some basic elements */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -8,15 +9,7 @@ body {
     background-color: #f4f4f4;
 }
 
-.container {
-    width: 80%;
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-}
-
+/* Navbar styles */
 .navbar {
     background: #333;
     color: white;
@@ -25,6 +18,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 .menu-icon {
@@ -52,8 +46,25 @@ body {
 /* Show menu when active */
 .nav-links.active {
     display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    text-align: center;
 }
 
+/* Container styles */
+.container, .container2 {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Profile content (text and image) */
 .profile {
     text-align: center;
     margin-bottom: 20px;
@@ -65,31 +76,16 @@ body {
     margin-bottom: 10px;
 }
 
-.blog-section {
-    text-align: center;
+/* Heading styles */
+h1, h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
 }
 
-.blog-grid {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.blog-post {
-    width: 30%;
-    background: #ddd;
+h2 {
+    text-align: left;
     padding: 10px;
-    text-align: center;
 }
 
-.blog-post img {
-    width: 100%;
-    height: auto;
-}
-
-.arrow {
-    margin-top: 10px;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-}
+/* Blog grid styles */
+.blog-s
