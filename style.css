@@ -133,6 +133,14 @@ h2 {
     background: #555;
 }
 
+/* Arrow container - Added this for centering */
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust space between posts and arrows */
+}
+
+
 /* Profile layout */
 .container2 {
     display: flex;
