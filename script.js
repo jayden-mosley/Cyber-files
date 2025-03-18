@@ -1,6 +1,7 @@
 // Toggle the mobile menu when the hamburger icon is clicked
 function toggleMenu() {
-    document.querySelector(".nav-links").classList.toggle("active");
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("active");
 }
 
 // Blog post navigation (for the arrows)
