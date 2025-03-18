@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -14,31 +14,34 @@
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#">Tech Blog</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Exploring Life</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <div class="profile">
-            <img src="profile-placeholder.png" alt="Your Icon">
             <h1>Welcome to My Blog!</h1>
-            <p>Sharing my experiences, projects, and tech thoughts.</p>
+            <p>Sharing my experiences, projects, and tech discoveries</p>
+            <img src="profile-placeholder.png" alt="Your Icon">
         </div>
-        <div class="blog-section">
-            <h2>Recent Posts</h2>
+        </div>
+        <div class="blog-section" id="tech-digest">
+            <h2>Tech Digest</h2>
             <div class="blog-grid">
                 <div class="blog-post">
                     <img src="placeholder1.jpg" alt="Blog Image">
-                    <p>Blog Title 1</p>
+                    <p>Cyber Chess</p>
                 </div>
                 <div class="blog-post">
                     <img src="placeholder2.jpg" alt="Blog Image">
-                    <p>Blog Title 2</p>
+                    <p>International CyberSpace Law is changing?</p>
                 </div>
                 <div class="blog-post">
                     <img src="placeholder3.jpg" alt="Blog Image">
-                    <p>Blog Title 3</p>
+                    <p>Discovering IT</p>
                 </div>
             </div>
             
@@ -46,6 +49,57 @@
             <button class="arrow right" onclick="nextPost()">&#10095;</button>
         </div>
     </div>
+    <div class="blog-section2" id="projects">
+            <h2>Projects</h2>
+            <div class="blog-grid">
+                <div class="blog-post">
+                    <img src="placeholder1.jpg" alt="Blog Image">
+                    <p>PLC Crane Logic</p>
+                </div>
+                <div class="blog-post">
+                    <img src="placeholder2.jpg" alt="Blog Image">
+                    <p>2FA using TOTP</p>
+                </div>
+                <div class="blog-post">
+                    <img src="placeholder3.jpg" alt="Blog Image">
+                    <p>AQI Global Analysis</p>
+                </div>
+            </div>
+            
+            <button class="arrow left" onclick="prevPost()">&#10094;</button>
+            <button class="arrow right" onclick="nextPost()">&#10095;</button>
+        </div>
+    </div>
+    
+    <div class="blog-section3" id="exploring-life">
+            <h2>Exploring Life</h2>
+            <div class="blog-grid">
+                <div class="blog-post">
+                    <img src="placeholder1.jpg" alt="Blog Image">
+                    <p>4 non-Blondies: Reaching 25</p>
+                </div>
+                <div class="blog-post">
+                    <img src="placeholder2.jpg" alt="Blog Image">
+                    <p>The Three Peaks Challenge Aug 2024</p>
+                </div>
+                <div class="blog-post">
+                    <img src="placeholder3.jpg" alt="Blog Image">
+                    <p>Where I've Been</p>
+                </div>
+            </div>
+            
+            <button class="arrow left" onclick="prevPost()">&#10094;</button>
+            <button class="arrow right" onclick="nextPost()">&#10095;</button>
+        </div>
+    </div>
+
+<div class="container2">
+        <div class="profile">
+            <h1>About Me</h1>
+            <p>Hello I like cats and not pickles</p>
+            <img src="profile-placeholder.png" alt="Your Icon">
+        </div>
+        </div>
 
 </body>
 </html>
